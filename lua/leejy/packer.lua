@@ -19,4 +19,8 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
+  use('itchyny/lightline.vim')
+
+  use('itchyny/vim-gitbranch')
+
 end)

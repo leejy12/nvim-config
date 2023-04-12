@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["lightline.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline.vim",
+    url = "https://github.com/itchyny/lightline.vim"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
@@ -98,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-gitbranch"] = {
+    loaded = true,
+    path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-gitbranch",
+    url = "https://github.com/itchyny/vim-gitbranch"
   },
   ["vim-surround"] = {
     loaded = true,
