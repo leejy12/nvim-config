@@ -29,3 +29,5 @@ vim.g.lightline = {
     gitbranch = 'gitbranch#name',
   },
 }
+
+vim.cmd([[autocmd VimLeave * set guicursor=n-v-c:ver100-blinkwait530-blinkon530]])
