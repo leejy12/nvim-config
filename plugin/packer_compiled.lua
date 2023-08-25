@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline.vim",
     url = "https://github.com/itchyny/lightline.vim"
   },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\leejy\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",

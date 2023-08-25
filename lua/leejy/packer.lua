@@ -17,8 +17,6 @@ return require('packer').startup(function(use)
 
   use('tpope/vim-fugitive')
 
-  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-
   use('itchyny/lightline.vim')
 
   use('itchyny/vim-gitbranch')
