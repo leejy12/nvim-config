@@ -10,3 +10,6 @@ vim.opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
 vim.opt.wrap = false
+
+-- set cursor blink on exit
+vim.cmd([[autocmd VimLeave * set guicursor=n-v-c:ver100-blinkwait530-blinkon530]])
