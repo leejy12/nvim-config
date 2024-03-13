@@ -12,5 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  "itchyny/lightline.vim"
+  "itchyny/lightline.vim",
+  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
+  "nvim-treesitter/nvim-treesitter"
 })
