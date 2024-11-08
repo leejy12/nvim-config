@@ -1,7 +1,4 @@
 ------------------- Options -------------------
-vim.g.loaded_netrw       = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- line numbers
 vim.opt.number         = true
 vim.opt.relativenumber = true
@@ -19,8 +16,28 @@ vim.opt.wrap = false
 vim.cmd([[autocmd VimLeave * set guicursor=n-v-c:ver100-blinkwait530-blinkon530]])
 
 ------------------- Keymaps -------------------
+
+local opts = { noremap = true }
+
 -- set leader key to space
 vim.g.mapleader = " "
+
+-- Set highlight on search, but clear on pressing <Esc> in normal mode.
+vim.opt.hlsearch = true
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- Find and center
+vim.keymap.set('n', 'n', 'nzzzv', opts)
+vim.keymap.set('n', 'N', 'Nzzzv', opts)
+
+-- Navigate between splits
+vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', opts)
+vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', opts)
+vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', opts)
+vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
+
+-- Keep last yanked when pasting
+vim.keymap.set('v', 'p', '"_dP', opts)
 
 -- Go to directory view (fs: filesystem)
 vim.keymap.set("n", "<leader>fs", vim.cmd.Ex)
@@ -46,7 +63,7 @@ require("lazy").setup({
   "itchyny/lightline.vim",
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" }},
   "nvim-treesitter/nvim-treesitter",
-  "nvim-tree/nvim-tree.lua"
+  -- "nvim-tree/nvim-tree.lua"
 })
 
-require("nvim-tree").setup()
+-- require("nvim-tree").setup()
