@@ -39,6 +39,10 @@ vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
 -- Keep last yanked when pasting
 vim.keymap.set('v', 'p', '"_dP', opts)
 
+-- Keep highlight after changing indent
+vim.keymap.set('v', '<', '<gv', opts)
+vim.keymap.set('v', '>', '>gv', opts)
+
 -- Go to directory view (fs: filesystem)
 vim.keymap.set("n", "<leader>fs", vim.cmd.Ex)
 
