@@ -1,7 +1,7 @@
 return {
-  'neonvim/nvim-lspconfig',
+  'neovim/nvim-lspconfig',
   config = function()
-    local lspconfig = require('nvim-lspconfig')
+    local lspconfig = require('lspconfig')
     lspconfig.pyright.setup {}
   end,
 }
