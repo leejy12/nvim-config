@@ -2,12 +2,13 @@
     "languageserver": {
         "clangd": {
             "command": "clangd",
-            "filetypes": ["c", "cpp", "cxx", "cc"]
+            "filetypes": ["c", "cpp", "cxx", "cc"],
+            "rootPatterns": [".git/", ".clangd"]
         },
         "pylsp": {
             "command": "pylsp",
             "filetypes": ["python"],
-            "rootPatterns": [".git", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt"]
+            "rootPatterns": [".git/", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt"]
         }
     }
 }
