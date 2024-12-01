@@ -1,0 +1,12 @@
+{
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "filetypes": ["c", "cpp", "cxx", "cc"]
+        },
+        "pyright": {
+            "command": "pyright",
+            "filetypes": ["python"]
+        }
+    }
+}

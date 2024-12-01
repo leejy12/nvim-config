@@ -23,7 +23,8 @@ require("lazy").setup {
   require 'plugins.lsp',
   require 'plugins.nvim-tree',
   require 'plugins.bufferline',
+  require 'plugins.nvim-treesitter',
+  require 'plugins.coc',
   { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' }},
-  'nvim-treesitter/nvim-treesitter',
 }
 
