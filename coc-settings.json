@@ -4,9 +4,10 @@
             "command": "clangd",
             "filetypes": ["c", "cpp", "cxx", "cc"]
         },
-        "pyright": {
-            "command": "pyright",
-            "filetypes": ["python"]
+        "pylsp": {
+            "command": "pylsp",
+            "filetypes": ["python"],
+            "rootPatterns": [".git", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt"]
         }
     }
 }
