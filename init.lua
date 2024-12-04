@@ -26,6 +26,6 @@ require("lazy").setup {
   require 'plugins.nvim-treesitter',
   require 'plugins.coc',
   require 'plugins.gitsigns',
-  { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' }},
+  require 'plugins.telescope',
 }
 
