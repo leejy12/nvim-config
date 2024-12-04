@@ -43,11 +43,6 @@ vim.keymap.set('n', '<leader>tn', ':tabn<CR>'    , opts)
 vim.keymap.set('n', '<leader>tp', ':tabp<CR>'    , opts)
 
 -- Keep last yanked when pasting
-vim.keymap.set('n', '<leader>to', ':tabnew<CR>', opts)
-
--- Keep last yanked when pasting
-
--- Keep last yanked when pasting
 vim.keymap.set('v', 'p', '"_dP', opts)
 
 -- Delete single key without copying into register
