@@ -18,14 +18,19 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup {
+local plugins = {
   require 'plugins.lualine',
-  require 'plugins.lsp',
   require 'plugins.nvim-tree',
   require 'plugins.bufferline',
   require 'plugins.nvim-treesitter',
-  require 'plugins.coc',
   require 'plugins.gitsigns',
   require 'plugins.telescope',
 }
 
+-- Use VS Code extensions for LSP and autocomplete.
+if not vim.g.vscode then
+  table.insert(plugins, require 'plugins.lsp')
+  table.insert(plugins, require 'plugins.coc')
+end
+
+require("lazy").setup(plugins)
