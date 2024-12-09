@@ -16,7 +16,7 @@ return {
       keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)        -- Go to implementation
       keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)            -- Show references
       keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)                  -- Show hover documentation
-      keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)     -- Show signature help
+      -- keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)     -- Show signature help
       keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)        -- Rename symbol
       keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)   -- Show code actions
       keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)          -- Go to previous diagnostic
