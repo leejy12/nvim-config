@@ -25,7 +25,7 @@ local plugins = {
   require 'plugins.nvim-treesitter',
   require 'plugins.gitsigns',
   require 'plugins.telescope',
-  require 'plugins.copilot',
+--  require 'plugins.copilot',
 }
 
 -- Use VS Code extensions for LSP and autocomplete.

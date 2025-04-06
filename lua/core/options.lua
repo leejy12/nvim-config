@@ -17,3 +17,4 @@ vim.opt.scrolloff = 4 -- Minimal number of screen lines to keep above and below 
 
 vim.opt.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search
 
+vim.opt.showmode = false
