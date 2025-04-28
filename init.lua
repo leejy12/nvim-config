@@ -25,6 +25,7 @@ local plugins = {
   require 'plugins.nvim-treesitter',
   require 'plugins.gitsigns',
   require 'plugins.telescope',
+  require 'plugins.mason',
 --  require 'plugins.copilot',
 }
 
