@@ -26,7 +26,6 @@ local plugins = {
   require 'plugins.gitsigns',
   require 'plugins.telescope',
   require 'plugins.mason',
-  require 'plugins.neoformat',
 --  require 'plugins.copilot',
 }
 
