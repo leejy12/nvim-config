@@ -19,12 +19,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  require 'plugins.lualine',
   require 'plugins.bufferline',
-  require 'plugins.nvim-treesitter',
-  require 'plugins.gitsigns',
-  require 'plugins.telescope',
 --  require 'plugins.copilot',
+  require 'plugins.gitsigns',
+  require 'plugins.lualine',
+  require 'plugins.nvim-treesitter',
+  require 'plugins.telescope',
+  require 'plugins.yazi',
 }
 
 -- Use VS Code extensions for LSP and autocomplete.
