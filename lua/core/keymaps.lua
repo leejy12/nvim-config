@@ -58,3 +58,17 @@ vim.keymap.set('v', '>', '>gv', opts)
 -- Telescope find_files (ff: find files)
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
 
+
+-- Custom commands
+vim.api.nvim_create_user_command(
+  'Vres',
+  function(opts)
+    vim.cmd('vertical resize ' .. (opts.args ~= '' and opts.args or ''))
+  end,
+  { nargs = '?' }
+)
+
+-- Custom commands
+vim.api.nvim_create_user_command('Vres', 'vertical resize', { nargs = 0 })
+vim.cmd('cabbrev vres Vres')
+
