@@ -1,9 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
   config = function()
-    -- Import the lspconfig plugin
-    local lspconfig = require('lspconfig')
-
     -- Define keymaps for LSP functionality
     local on_attach = function(client, bufnr)
       -- Helper function to set buffer-specific keymaps
@@ -24,15 +21,5 @@ return {
       keymap('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)  -- Add diagnostics to location list
       keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>', opts) -- Format buffer
     end
-
-    -- Add additional language servers as needed
-    lspconfig.clangd.setup {
-      on_attach = on_attach
-    }
-
-    lspconfig.pylsp.setup {
-      on_attach = on_attach
-    }
-
   end,
 }
